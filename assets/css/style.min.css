@@ -1,1 +1,1 @@
-.x0{left:0}.y0{top:0}.x1{left:20px}.y1{top:20px}.x2{left:40px}.y2{top:40px}.x3{left:60px}.y3{top:60px}
+.x0{left:0}.y0{top:0}.x1{left:20px}.y1{top:20px}.x2{left:40px}.y2{top:40px}.x3{left:60px}.y3{top:60px}div.game-container{width:100%;height:100vh;background-image:url(../images/background.jpg)}div.roll-button:active div.dice{-webkit-animation:rollingDice ease 1s forwards;animation:rollingDice ease 1s forwards}
