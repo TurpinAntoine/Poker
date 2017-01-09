@@ -21,35 +21,3 @@
 
 .y3 {
   top: 60px; }
-
-div.game-container {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../images/background.jpg"); }
-
-div.roll-button:active div.dice {
-  -webkit-animation: rollingDice ease 1s forwards;
-          animation: rollingDice ease 1s forwards; }
-
-div.dice {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  position: absolute;
-  top: -100px;
-  left: -100px;
-  will-change: transform; }
-
-.rolling {
-  -webkit-animation: rollingDice ease 1s forwards;
-          animation: rollingDice ease 1s forwards; }
-
-@-webkit-keyframes rollingDice {
-  100% {
-    -webkit-transform: translateY(300px);
-            transform: translateY(300px); } }
-
-@keyframes rollingDice {
-  100% {
-    -webkit-transform: translateY(300px);
-            transform: translateY(300px); } }

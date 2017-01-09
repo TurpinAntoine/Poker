@@ -1,29 +1,29 @@
 @import 'grid.scss';
 
-div.game-container {
-    width: 100%;
-    height: 100vh;
-    background-image: url("../images/background.jpg");
-}
-
-div.roll-button:active div.dice{
-  animation: rollingDice ease 1s forwards;
-}
-
-div.dice {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: absolute;
-    top: -100px;
-    left: -100px;
-    will-change : transform;
-}
-
-.rolling{
-  animation: rollingDice ease 1s forwards;
-}
-
-@keyframes rollingDice{
-  100% { transform: translateY(300px); };
-}
+// div.game-container {
+//     width: 100%;
+//     height: 100vh;
+//     background-image: url("../images/background.jpg");
+// }
+//
+// div.roll-button:active div.dice{
+//   animation: rollingDice ease 1s forwards;
+// }
+//
+// div.dice {
+//     width: 100px;
+//     height: 100px;
+//     background-color: red;
+//     position: absolute;
+//     top: -100px;
+//     left: -100px;
+//     will-change : transform;
+// }
+//
+// .rolling{
+//   animation: rollingDice ease 1s forwards;
+// }
+//
+// @keyframes rollingDice{
+//   100% { transform: translateY(300px); };
+// }
