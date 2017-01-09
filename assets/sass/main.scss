@@ -6,10 +6,6 @@ div.game-container {
     background-image: url("../images/background.jpg");
 }
 
-div.roll-button:active div.dice{
-  animation: rollingDice ease 1s forwards;
-}
-
 div.dice {
     width: 100px;
     height: 100px;
@@ -17,13 +13,5 @@ div.dice {
     position: absolute;
     top: -100px;
     left: -100px;
-    will-change : transform;
-}
-
-.rolling{
-  animation: rollingDice ease 1s forwards;
-}
-
-@keyframes rollingDice{
-  100% { transform: translateY(300px); };
+    transition : 2s ease;
 }

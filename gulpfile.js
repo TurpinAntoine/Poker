@@ -50,7 +50,8 @@ gulp.task( 'js', function(){
   ] )
     .pipe( gulp_concat( 'script.min.js' ) )
     .pipe( gulp_uglify() )
-    .pipe( gulp.dest( './assets/js/' ) );
+    .pipe( gulp.dest( './assets/js/' ) )
+    .pipe(browserSync.reload({stream:true}));
 } );
 
 // min Images
@@ -65,8 +66,8 @@ gulp.task( 'watch', ['browser-sync', 'sass', 'min_css', 'js', 'minImages'], func
   gulp.watch( './assets/sass/main.scss', ['sass']);
   gulp.watch( './assets/css/*.css', ['min_css']);
   gulp.watch( [ './assets/sass/**',
-               '!./assets/js/script.min.js' ],
-             ['js']);
+               '!./assets/js/script.min.js' ], ['js']);
+               gulp.watch( './assets/js/*.js', ['js']);
   gulp.watch('index.html', browserSync.reload);
   gulp.watch('assets/css/*.css', browserSync.reload);
   gulp.watch('assets/js/*.js', browserSync.reload);
