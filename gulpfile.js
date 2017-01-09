@@ -45,7 +45,6 @@ gulp.task( 'min_css', function(){
 // min JS
 gulp.task( 'js', function(){
   return gulp.src( [
-    './assets/js/fastclick.js',
     './assets/js/script.js',
   ] )
     .pipe( gulp_concat( 'script.min.js' ) )
@@ -61,7 +60,7 @@ gulp.task('minImages', function(){
 });
 
 // Watch task
-gulp.task( 'watch', ['browser-sync', 'sass'], function(){
+gulp.task( 'watch', ['browser-sync', 'sass', 'min_css', 'js', 'minImages'], function(){
   gulp.watch( './assets/sass/main.scss', ['sass']);
   gulp.watch( [ './assets/sass/**',
                '!./assets/js/script.min.js' ],
