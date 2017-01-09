@@ -39,7 +39,8 @@ gulp.task( 'min_css', function(){
   return gulp.src( './assets/css/main.css' )
     .pipe( gulp_cssnano() )
     .pipe( gulp_rename( 'style.min.css' ) )
-    .pipe( gulp.dest( './assets/css/' ) );
+    .pipe( gulp.dest( './assets/css/' ) )
+    .pipe(browserSync.reload({stream:true}));
 } );
 
 // min JS
@@ -62,10 +63,12 @@ gulp.task('minImages', function(){
 // Watch task
 gulp.task( 'watch', ['browser-sync', 'sass', 'min_css', 'js', 'minImages'], function(){
   gulp.watch( './assets/sass/main.scss', ['sass']);
+  gulp.watch( './assets/css/*.css', ['min_css']);
   gulp.watch( [ './assets/sass/**',
                '!./assets/js/script.min.js' ],
              ['js']);
   gulp.watch('index.html', browserSync.reload);
+  gulp.watch('assets/css/*.css', browserSync.reload);
   gulp.watch('assets/js/*.js', browserSync.reload);
 } );
 

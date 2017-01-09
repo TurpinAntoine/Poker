@@ -1,4 +1,33 @@
+.x0 {
+  margin-left: 0px; }
+
+.y0 {
+  margin-top: 0px; }
+
+.x1 {
+  margin-left: 20px; }
+
+.y1 {
+  margin-top: 20px; }
+
+.x2 {
+  margin-left: 40px; }
+
+.y2 {
+  margin-top: 40px; }
+
+.x3 {
+  margin-left: 60px; }
+
+.y3 {
+  margin-top: 60px; }
+
 div.game-container {
   width: 100%;
   height: 100vh;
   background-image: url(../images/background.jpg); }
+
+div.dice {
+  width: 100px;
+  height: 100px;
+  background-color: green; }
