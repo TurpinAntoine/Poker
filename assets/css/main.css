@@ -30,3 +30,12 @@ div.game-container {
 div.roll-button:active div.dice {
   -webkit-animation: rollingDice ease 1s forwards;
           animation: rollingDice ease 1s forwards; }
+
+div.dice {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  will-change: transform; }
