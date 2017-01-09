@@ -39,3 +39,17 @@ div.dice {
   top: -100px;
   left: -100px;
   will-change: transform; }
+
+.rolling {
+  -webkit-animation: rollingDice ease 1s forwards;
+          animation: rollingDice ease 1s forwards; }
+
+@-webkit-keyframes rollingDice {
+  100% {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px); } }
+
+@keyframes rollingDice {
+  100% {
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px); } }

@@ -20,10 +20,10 @@ div.dice {
     will-change : transform;
 }
 
-// .rolling{
-//   animation: rollingDice ease 1s forwards;
-// }
-//
-// @keyframes rollingDice{
-//   100% { transform: translateY(300px); };
-// }
+.rolling{
+  animation: rollingDice ease 1s forwards;
+}
+
+@keyframes rollingDice{
+  100% { transform: translateY(300px); };
+}
