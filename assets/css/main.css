@@ -1,0 +1,171 @@
+/*
+ *  SOCIAL_COLORS
+ */
+@font-face {
+  font-family: "Quicksand-Light";
+  src: url(../fonts/Quicksand-Light.ttf);
+  font-weight: light; }
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url(../fonts/Quicksand-Regular.ttf);
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Quicksand-Medium";
+  src: url(../fonts/Quicksand-Medium.ttf);
+  font-weight: 600; }
+
+@font-face {
+  font-family: "Quicksand-Bold";
+  src: url(../fonts/Quicksand-Bold.ttf);
+  font-weight: bold; }
+
+h3 {
+  font-family: "Quicksand-Bold";
+  font-size: 13px;
+  color: #6E5E61;
+  padding: 30px; }
+
+/* FONTS */
+body {
+  background-color: #EFF3F7;
+  padding: 110px; }
+
+.clearBoth {
+  clear: both; }
+
+.container {
+  width: 100%;
+  margin: auto;
+  background-color: #F4F9FA;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5); }
+
+/* HEADER */
+div.header, div.bottom {
+  width: 100%; }
+
+div.cover img {
+  width: 30%;
+  height: auto;
+  float: left; }
+
+div.details {
+  width: 70%;
+  height: 318px;
+  float: right;
+  background-color: #C8C5D0;
+  position: relative; }
+  div.details h1 {
+    font-family: "Quicksand-Regular";
+    font-size: 26px;
+    color: #6E5E61;
+    margin-top: 100px;
+    padding-left: 30px; }
+  div.details h2 {
+    font-family: "Quicksand-Regular";
+    font-size: 13px;
+    color: #6E5E61;
+    margin-top: 10px;
+    padding-left: 30px; }
+  div.details p {
+    font-family: "Quicksand-Regular";
+    font-size: 10px;
+    color: #fff;
+    margin-top: 5px;
+    padding-left: 30px; }
+
+.playerButton {
+  position: absolute;
+  right: 30px;
+  bottom: 35px;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #DAD8E4;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.61); }
+
+.playerButton img {
+  width: 15px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 44%; }
+
+.date {
+  background-color: #DAD8E4;
+  height: 65px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border-top: 2px solid rgba(119, 119, 119, 0.2); }
+  .date p {
+    font-family: "Quicksand-Bold";
+    font-size: 10px;
+    color: #6E5E61;
+    padding-left: 30px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+
+/* BOTTOM */
+div.albumInfo {
+  float: left;
+  width: 30%;
+  height: 250px;
+  background-color: #EEF5F7; }
+  div.albumInfo p {
+    font-family: "Quicksand-Regular";
+    font-size: 10px;
+    color: #6E5E61;
+    padding: 0 30px; }
+
+div.playlist {
+  float: right;
+  width: 70%;
+  background-color: #F4F9FA; }
+  div.playlist span {
+    font-family: "Quicksand-Regular";
+    font-size: 12px;
+    color: #6E5E61;
+    padding-right: 30px; }
+  div.playlist p:first-child {
+    margin-top: 20px; }
+  div.playlist p {
+    font-family: "Quicksand-Bold";
+    font-size: 13px;
+    color: #6E5E61;
+    padding: 15px 30px; }
+
+/* PLAYER */
+div.player {
+  width: 100%;
+  height: 65px;
+  background-color: #EEF5F7;
+  position: relative; }
+  div.player h3 {
+    float: left; }
+  div.player .controls {
+    position: absolute;
+    left: 320px; }
+  div.player .controls img {
+    width: 15px;
+    display: inline-block;
+    float: left;
+    padding: 30px; }
+  div.player .time {
+    float: right;
+    font-family: "Quicksand-Regular";
+    font-size: 12px;
+    color: #6E5E61;
+    padding: 30px; }
